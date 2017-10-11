@@ -5,7 +5,7 @@ This is a continuation of [Assignment 2](https://github.com/jungkumseok/cpen400a
 ## Tasks
 
 1. **Create a Product constructor** (4 Points)
-* A) Write a function with the signature `Product(name, price, imageUrl)`, which will be used to create instances of `Product` objects. The created object should have the properties `name`, `price`, and `imageUrl` that will be initialized by the arguments given into the constructor function `(name, price, imageUrl)`. You should be able to create a new `Product` object using this function like this:
+* A) Write a function with the signature `Product(name, price, imageUrl)`, which will be used to create instances of `Product` objects. The created object should have the properties `name`, `price`, and `imageUrl` that will be initialized with the arguments `(name, price, imageUrl)` given into the constructor function. You should be able to create a new `Product` object using this function like this:
     
 ```
 var box1 = new Product('Box1', 10, 'images/products/Box1_$10.png');
@@ -38,9 +38,12 @@ var products = {
 ```
   You **do not** need to keep the product instances in the `cart` as that information is already there in the `products` object. When calculating the total price of the products in the cart, you can use the price information from the `Product` instances. Please feel free to assign prices to products as you like (you do not have to use prices given in the image URL).
 
-3. **Cart Price / Timeout:** (3 points) On the top right corner of your website, show a button with text **Cart ($0)**. Here $0 represent the total price for the products in the cart. When the end-user clicks on **Add** button for any product, the cart variable needs to be updated and the new total price should be shown on this button. Use the `products` variable when calculating the total price of products in the cart. You also need to display the **inactiveTime** from the previous assignment within the website footer. You can change the inactive time to **300s** now. The footer should be updated every second to reflect the time that the user has been inactive. *Please note that viewing the cart is also considered a user action.*
+
+3. **Cart Price / Timeout:** (3 points) On the top right corner of your website, show a button with text **Cart ($0)**. Here $0 represent the total price for the products in the cart. When the end-user clicks on **Add** button for any product, the cart variable needs to be updated and the button should be updated to display the new total price. Use the `products` variable when calculating the total price of products in the cart. You also need to display the **inactiveTime** from the previous assignment within the website footer. You can change the inactive time to **300s** now. The footer should be updated every second to reflect the time that the user has been inactive. *Please note that viewing the cart is also considered a user action.*
+
 
 4. **Conditionally Hide Add and Remove Buttons:** (2 points) By default, when there is no product in the cart, when the user hovers over the product there should only be the **Add** button visible. **Remove** button for any product should only be visible when there is at least one of that product in the cart. If a product is out of stock (i.e. quantity == 0 in products), the **Add** button should be hidden and a friendly message should be displayed to indicate that the item is out of stock.
+
 
 5. **Show Cart:** (4 points) When clicking on the  **Cart ($0)** button, the user should be presented with a Modal, that looks like [this](http://maxcdn.webappers.com/img/2011/03/css-modal.png). The modal should perform the following functionality
   - The modal should appear in the center of the window, with a transparent black background around the modal.
