@@ -6,15 +6,18 @@ This is a continuation of [Assignment 2](https://github.com/jungkumseok/cpen400a
 
 1. **Create a Product constructor** (4 Points)
     * A) Write a function with the signature `Product(name, price, imageUrl)`, which will be used to create instances of `Product` objects. The created object should have the properties `name`, `price`, and `imageUrl` that will be initialized by the arguments given into the constructor function `(name, price, imageUrl)`. You should be able to create a new `Product` object using this function like this:
+
 ```
 var box1 = new Product('Box1', 10, 'images/products/Box1_$10.png');
 console.log( box1.name ); // Should print "Box1" to the console.
 ```
     * B) Write a prototype function of `Product` with the signature `computeNetPrice(quantity)`, which takes in a single number `quantity` as an argument and returns price of the product multiplied by the given quantity. Example:
+
 ```
 //Using box1 from the example from Part 1A
 console.log( box1.computeNetPrice(5) ); // Should print '50' to the console.
 ``` 
+
 This function will be useful in Part 3 and Part 5 for computing the total price in the cart.
 
 
