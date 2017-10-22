@@ -66,6 +66,15 @@ var products = {
 (3 points)
 There are multiple ways to go about implementing the tasks specified in this assignment. However, you should consider the scalability/robustness of your implementation. As an example, you should consider creating DOM elements programmatically (from Assignment 2 onwards) rather than hardcoding them in your HTML. Software designs that lead to "copy and paste programming" will be discouraged.
 
+
+## Testing
+**To test your code, insert the following script tags within the head tag of your page**
+```
+<script src="http://ece.ubc.ca/~kumseok/src/cpen400a/test3.js" type="text/javascript"></script>
+```
+You will see a Red button on the top-right corner of your web page. Clicking on that will let you test your code.
+Watch out for the alert messages which tells you any missing components/functionalities. You are responsible for ensuring that all the functionalities above are implemented correctly - the tests are only there to help you. We reserve the right to test your code with other test cases than the above.
+
 ## Submission instructions:
 
 * Create a branch called `assignment-3`.
