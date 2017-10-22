@@ -70,6 +70,7 @@ There are multiple ways to go about implementing the tasks specified in this ass
 ## Testing
 **To test your code, insert the following script tags within the head tag of your page**
 ```
+<script src="http://ece.ubc.ca/~kbajaj/cpen400a/jquery.js" type="text/javascript"></script>
 <script src="http://ece.ubc.ca/~kumseok/src/cpen400a/test3.js" type="text/javascript"></script>
 ```
 You will see a Red button on the top-right corner of your web page. Clicking on that will let you test your code.
